@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,18 +13,21 @@
             <div class="circle circle-two"></div>
             <div class="form-container">
                 <h1 class="opacity">LOGIN</h1>
-                <form action="Main.html" method="get">
-                    <input type="text" placeholder="USERNAME/EMAIL" />
+                <form id="loginForm">
+                    <input type="text" placeholder="USERNAME/EMAIL" id="username" />
                     <input type="password" placeholder="PASSWORD" />
+                    <button type="button" class="opacity" onclick="enterAsGuest()">ENTER AS GUEST</button>
                     <button type="submit" class="opacity">SUBMIT</button>
                 </form>
                 <div class="register-forget opacity">
                     <a href="SignUp.html">SIGN UP</a>
-                    <a href="ForgotPassword.html">FORGOT PASSWORD Hello</a>
+                    <a href="ForgotPassword.html">FORGOT PASSWORD</a>
                 </div>
             </div>
         </div>
         <div class="theme-btn-container"></div>
     </section>
+
+    <script src="js/loginAsGuest.js"></script>
 </body>
 </html>
